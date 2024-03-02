@@ -1,0 +1,7 @@
+@mixin location-card {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  row-gap: 10px;
+  column-gap: 20px;
+  justify-content: center;
+}
