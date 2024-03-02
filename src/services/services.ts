@@ -24,9 +24,9 @@ export const fetchCharactersByLocation = async (locationId: number) => {
 	}
 };
 
-export const fetchCharacterDetails = async (characterId: number) => {
+export const fetchCharacterDetails = async (characterUrl: string) => {
 	try {
-		const response = await fetch(`${BASE_URL}character/${characterId}`);
+		const response = await fetch(characterUrl);
 		if (!response.ok) {
 			throw new Error("Network response was not ok");
 		}
